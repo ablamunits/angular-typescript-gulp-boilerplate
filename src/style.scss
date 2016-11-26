@@ -1,0 +1,18 @@
+@import './styling/vars';
+@import './styling/common';
+
+body {
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	color: $white;
+	margin: 0;
+	padding: 5px;
+	background-color: $green;
+}
+
+// Pages
+@import './pages/main';
+
+// Directives
+@import './directives/list-item-block/list-item-block';

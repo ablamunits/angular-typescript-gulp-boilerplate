@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "types": [
+            "angular",
+            "angular-mocks",
+            "jasmine"
+        ]
+    },
+    "compileOnSave": false,
+    "exclude": [
+        "node_modules"
+    ],
+    "files": [
+        "src/app.ts",
+        "src/directives/list-item-block/list-item-block.driver.ts",
+        "src/directives/list-item-block/list-item-block.drv.ts",
+        "src/directives/list-item-block/list-item-block.test.ts",
+        "src/list-item/list-item.i.ts",
+        "src/pages/main.ctrl.ts",
+        "src/test-utils/base-driver.ts"
+    ],
+    "filesGlob": [
+        "src/**/*.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
