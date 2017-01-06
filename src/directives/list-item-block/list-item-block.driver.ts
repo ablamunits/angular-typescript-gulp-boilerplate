@@ -11,7 +11,7 @@ export class ListItemBlockDriver extends BaseDriver {
 
 			scope.$digest();
 
-			$(document.body).empty().append(elem);
+			document.body.innerHTML = elem;
 		});
 
 		return new ListItemBlockDriver(elem, scope);

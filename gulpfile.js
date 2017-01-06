@@ -54,6 +54,10 @@ gulp.task('ts-copy', function() {
 	})
 	.plugin(tsify)
 	.bundle()
+	.on('error', function(err) {
+		console.log('\nError: ', err.name);
+		console.log(err.message);
+	})
 	.pipe(source('bundle.js'))
 	.pipe(gulp.dest('dist'));
 });
